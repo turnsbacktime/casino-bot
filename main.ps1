@@ -7,10 +7,9 @@ $sshCommand = "ssh $username@$hostname $scriptToRun"
 Invoke-Expression $sshCommand
 # Activate Python virtual environment and run main.py using Python
 $venvActivate = "C:\Users\Admin\Documents\GitHub\casino-bot\venv\Scripts\Activate.ps1"
-
-if (Test-Path $venvActivate) {
-    & $venvActivate
-    python -m main
-} else {
-    Write-Host "Virtual environment activation script not found: $venvActivate"
-}
+# Activate the virtual environment
+& $venvActivate
+# Run python script
+$pythonScript = "C:\Users\Admin\Documents\GitHub\casino-bot\main.py"
+# Run the Python script
+python $pythonScript
