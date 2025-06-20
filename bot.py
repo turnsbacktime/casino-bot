@@ -36,7 +36,7 @@ class GamblingBot(commands.Bot):
                 'cogs.economy', 
                 'cogs.games',
                 'cogs.mining',
-                'cogs.guild_config',
+                'cogs.guild',
                 'cogs.lottery'
             ]
             
